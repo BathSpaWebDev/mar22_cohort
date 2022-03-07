@@ -12,7 +12,7 @@ This is an example of a paragraph tag:
 
 ## HTML document
 
-An html document starts with a Doctype - This does not have a closing tag and looks like this: <!DOCTYPE html>
+An html document starts with a Doctype - This does not have a closing tag and looks like this: `<!DOCTYPE html>`
 
 Everything in our html document goes inside an html tag. When another element is placed inside another element this is called 'nesting'.
 
