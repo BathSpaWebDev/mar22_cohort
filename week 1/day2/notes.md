@@ -80,4 +80,4 @@ Attributes go inside the opening tag - eg a title attribute:
 ## Img tag
 
 Image tag is self-closing - this means you do not need to have a closing tag. The src atttribute tells you where to look for the image.
-<img src="https://picsum.photos/200/100" alt="random image" >
+`<img src="https://picsum.photos/200/100" alt="random image" >`
