@@ -34,16 +34,21 @@ ordered:
 ```
 
 
-# To indent
-Command + ]
+## To indent
+`Command + ]`  - (On windows replace cmd with ctrl)
 
+## To format
+`Command + shift + f`
+
+## Wrapping in tags
+Open up command palette `cmd + shift + p` then choose settings on Emmet:wrap with abbreviate and enter the command you want to use to wrap something in a tag. 
 
 ## Default positioning
 BLOCK vs Inline
 
-**Block elements** take up the full width of the container, and start on a new line. Examples of block elements are paragraph, div, heading tags, section.
+- **Block elements** take up the full width of the container, and start on a new line. Examples of block elements are paragraph, div, heading tags, section.
 
-**Inline elements** only take up the width of the whatever is inside the tag. They do not start on a new line. They are left to right.
+- **Inline elements** only take up the width of the whatever is inside the tag. They do not start on a new line. They are left to right.
 span, em, strong are all inline elements.
 
 ## Divs
