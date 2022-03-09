@@ -5,7 +5,7 @@
 Hyperlinks take us from one page to another, when we click it. You can create a hyperlink  like so:
 
 ```
-<a href="https://google.com" target="_blank" rel="noopener noreferrer">Click me</a>
+<a href="https://google.com">Click me</a>
 ```
 The href tells us the path of the page we want to link to - this can be relative (to the file we are editing), or absolute (eg: https://google.com).
 
