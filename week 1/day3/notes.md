@@ -54,9 +54,9 @@ you can add comments in css like this:
 
 ## classes
 
-Classese are attributes you add to you html tags. They are identifiers they allow us to identify and specify certain elemtents in our css rules (in even in javascript). 
+Classes are attributes you add to you html tags. They are identifiers that allow us to identify and specify certain elements in our css rules (in even in javascript). 
 
-For example if I add a class of "myclass" to a div, then apply a css rul to select .myclass itthe css rule will only apply to that class of div, and not others.
+For example if I add a class of "myclass" to a div, then apply a css rule to select .myclass the css rule will only apply to that class of div, and not others.
 
 To use class selector in css, precede the classname with a **`.`**
 
