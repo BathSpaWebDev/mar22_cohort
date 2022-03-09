@@ -2,18 +2,18 @@
 
 Hyperlinks takes us from one page to another, when we click it. You can create a hyperlink  like so:
 
-`
+```
 <a href="https://google.com" target="_blank" rel="noopener noreferrer">Click me</a>
-`
+```
 
 
 ## Stylesheets
 
 External stylesheets allow us to keep the code tidier and less cluttered. You need to save a stylesheet with a `.css` suffix. In your HTML document, you need to link the stylessheet using the <link> tag, like so:
 
-`
+```
 <link rel="stylesheet" href="path/to/your/stylesheet.css">
-`
+```
 
 ## Writing css
 
