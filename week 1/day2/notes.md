@@ -8,8 +8,10 @@ There are 6 h tags - h1, h2, h3, h4, h5, h6
 
 The p tag means it is a paragraph. Every p tag will start on a new line and by default will have some space below it.
 
-## strong tag
-This makes the text bold
+## strong vs b tag
+This makes the text bold.
+
+The <strong> element is for content that is of greater importance, while the <b> element is used to draw attention to text without indicating that it's more important.
 
 ## Lists
 There are two types of list, ordered lists and unordered list. Ordered lists by default have a number on each list item. The syntax is like so:
