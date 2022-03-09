@@ -1,11 +1,13 @@
-# Hyperlinks
+# Day 3
+
+## Hyperlinks
 
 Hyperlinks take us from one page to another, when we click it. You can create a hyperlink  like so:
 
 ```
 <a href="https://google.com" target="_blank" rel="noopener noreferrer">Click me</a>
 ```
-The href tells us the path of the page we wnat to link to - this can be relative (to the file we are editing), or absolute (eg: https://google.com).
+The href tells us the path of the page we want to link to - this can be relative (to the file we are editing), or absolute (eg: https://google.com).
 
 Please note that the href must go within the opening a tag ( *before the `>`*)
 
