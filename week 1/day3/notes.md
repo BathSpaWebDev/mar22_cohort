@@ -47,7 +47,7 @@ selector {
 you can add comments in css like this:
 
 ```
-/*Add some explanation or comment about your code here*/
+/* Add some explanation or comment about your code here */
 ```
 
 ## classes
