@@ -1,6 +1,15 @@
 # Hyperlinks
 
-Hyperlinks takes us from one page to another, when we click it. You can create a hyperlink  like so:
+Hyperlinks take us from one page to another, when we click it. You can create a hyperlink  like so:
+
+```
+<a href="https://google.com" target="_blank" rel="noopener noreferrer">Click me</a>
+```
+The href tells us the path of the page we wnat to link to - this can be relative (to the file we are editing), or absolute (eg: https://google.com).
+
+Please note that the href must go within the opening a tag ( *before the `>`*)
+
+To make it open in a new tab, you add target attribute (value is "_blank") and the rel attribute as follows:
 
 ```
 <a href="https://google.com" target="_blank" rel="noopener noreferrer">Click me</a>
