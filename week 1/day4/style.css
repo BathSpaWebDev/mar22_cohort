@@ -1,0 +1,50 @@
+/* Form styles */
+
+.row {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+header {
+    background-color:blue;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size:1.6rem;
+}
+input {
+    width:200px;
+    height:20px;
+    font-size:1.4rem;
+    padding:10px;
+}
+
+.box {
+    background-color:green;
+    color:#fff;
+    width:200px;
+    height:200px;
+    position:relative;
+}
+
+.box .inner {
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
