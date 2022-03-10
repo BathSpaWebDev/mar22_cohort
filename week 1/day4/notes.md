@@ -82,7 +82,7 @@ Place the inner div to the bottom right, by setting the right, and bottom proper
 
 ### hw2
 
-Create a top trump car that is laid out similarly to the ebay example (see slack). Add a link to the div containing the image, so the link sites above the image to the bottom right of the container ( see sketch in slack).
+Create a top trump card that is laid out similarly to the ebay example (see slack). Add a link to the div containing the image, so the link sits above the image to the bottom right of the container ( see sketch in slack).
 
 [Link to Ebay example](https://www.ebay.co.uk/itm/163439171791?chn=ps&var=462774904504&norover=1&mkevt=1&mkrid=710-134428-41853-0&mkcid=2&itemid=462774904504_163439171791&targetid=1278608952936&device=c&mktype=&googleloc=1006502&poi=&campaignid=14727339348&mkgroupid=127909237815&rlsatarget=pla-1278608952936&abcId=9300672&merchantid=7267174&gclid=CjwKCAiA4KaRBhBdEiwAZi1zzlazU2G7PKuHT7et2UtZQNKPBkoUHHOBxSHiJjb6K776oKpTEMjbhBoCmUwQAvD_BwE)
 
