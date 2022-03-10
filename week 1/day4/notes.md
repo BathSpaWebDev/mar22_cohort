@@ -11,13 +11,39 @@ You connect the label to the input using the "for" attribute.
 
 When you click a button with the type set to "form" it carries out the onsubmit event ( which you can specify in javascript). If you are using php it carries out the action (specified in the action attribute).
 
+## Example simple form html only
+```
+<form onsubmit="">
+    <div class="form-row">
+        <label for="first-name">First name</label><br>
+        <input type="text" id="first-name" name="first-name" >
+    </div>
+    <div class="form-row">
+        <label for="surname">Surname</label><br>
+        <input type="text" id="surname" name="surname" >
+    </div>
+
+    <button type="submit">Submit form</button>
+</form>
+```
+It is important to add a name and id to forms. You will learn more about capturing information from form input values later using these attributes.
+
+_Nb: I have divided the form up into divs so I can easily style consistently accross all rows._
+
+_Nb: There are other types of input, eg, radio, checkbox, email, phone - you can read about them [here](https://www.w3schools.com/html/html_forms.asp)_
 
 # Position 
-Position css property
+Position is a css property that determines how an element canbe positioned relative to other elements on the page. It is important in cacheiving different layouts, and moving. 
+
+It is a fairly tricky concept to grasp, so focus on reading about it as much as possible as it will help you a lot in the long run.
 
 ## Position:relative;
 
-If I set the top offset (eg. top: 100px;), it will move the box 100px from its original position.
+Position relative follows the **document flow**, this means relative elements are placed left to right, and stacking on top of on another (if they are block elemtents). They take up space in the document flow, and other elements shift to after/below them. 
+
+_(this is not the case with absolute positioned elements which are removed from this normal flow - ie they don't take up space and other elements act as if it wasn't there.)_
+
+If I set the top offset on a relative element (eg. top: 100px;), it will move the element 100px from its original top boundary.
 
 
 ## Position:absolute;
@@ -26,7 +52,7 @@ When you set the box to absolute, it takes the box out of the normal document fl
 Setting the top, left, right, bottom properties now moves the box relative to the 
 **nearest parent container which is set to relative.**
 
-eg. if the parent container is set to position relative and I do the following:
+eg. if I do the following:
 
 ```
 div.parent {
@@ -39,7 +65,7 @@ div.child {
     right: 15px;
 }
 ```
-It will place the child div 15px from the right of the parent div's boundary and 100px from the bottom of the parent div.
+...it will place the child div 15px from the right of the parent div's boundary and 100px from the bottom of the parent div. It is no longer relative to the viewport because the parent div has position relative.
 
 ## Fixed position
 
