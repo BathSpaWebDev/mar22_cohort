@@ -1,0 +1,65 @@
+.tt {
+    background-color:azure;
+    width:240px;
+}
+
+.tt__header {
+    background-color:#444;
+    padding:10px;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+}
+
+.tt__image img {
+    width:100%;
+}
+
+.tt__image {
+    position:relative;
+    /* height:200px; */
+    background-color:aqua;
+    padding:60px 0;
+}
+.example {
+    position:absolute;
+    top:0;
+    right:0;
+    background:yellow;
+}
+.example-flex-container {
+    position:relative;
+    height:80px;
+    width:80px;
+    background:pink;
+    display:flex;
+}
+
+.example-flex-container .block {
+    position:absolute;
+    height:20px;
+    width:20px;
+    background:green;
+    bottom: 0;
+    right: 0;
+}
+
+.tt__link {
+    position:relative;
+}
+.tt__link .inner {
+    text-align:center;
+}
+.tt__link a {
+    color:#fff;
+    background-color:red;
+}
+
+.tt__details {
+    padding:10px;
+}
+
+.tt__detail-row {
+    display:flex;
+    justify-content: space-between;
+}
