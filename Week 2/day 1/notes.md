@@ -5,6 +5,17 @@ Flex box is a css layout system that enables us to create layouts, that work fle
 
 Flexbox  makes things easier - before we had to use things like `float`, which could cause knock-on effects and layout issues that were hard to debug ( and was often trickier to acheive more complex, nested layouts).
 
+## One dimensional
+
+Flexbox is said to be one dimansional in that the layout can either be on the x axis OR the y axis ( depending on if you set the flex-direction property to row, or column).
+
+Often times this is enough but when you need to set both row heights and column widths etc, you may opt to use css grid which is 2 dimansional (which has slightly less cross brower support).
+
+# Flex is content first
+content-first design  — Flexbox is the ideal layout system to create web pages if you don’t know exactly how your content is going to look, so if you want everything just to fit in, Flexbox is perfect for that.
+
+the oppositie is layout-first - if you want your content to fit into a set layout, it may be better to use css grid.
+
 ### How Flex works
 
 It consists of a flex-container, and flex items ( these are the elements within the container). We define a flex container by applying a css property to the parent element, like so:
