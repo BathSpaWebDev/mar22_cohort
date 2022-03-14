@@ -1,0 +1,40 @@
+body {
+margin:0;
+}
+
+
+
+.wrapper {
+    display:flex;
+    height:100vh;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+    background-color:purple;
+}
+.wrapper .item {
+    color:#fff;
+}
+
+.item:hover {
+    color:red;
+    cursor:pointer;
+}
+
+
+.flex-container {
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+.flex-container .flex-item {
+    background-color:green;
+    color:#fff;
+    height:100px;
+    flex-grow:1;
+}
+.flex-container .main-col {
+    flex-grow: 2;
+}
+

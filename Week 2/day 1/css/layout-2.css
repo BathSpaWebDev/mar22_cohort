@@ -1,0 +1,12 @@
+/*Second container*/
+
+.flex-container2 {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.flex-container2 .flex-item {
+    background-color:red;
+    color:#fff;
+}
