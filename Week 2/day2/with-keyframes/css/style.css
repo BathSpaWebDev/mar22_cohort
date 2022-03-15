@@ -1,0 +1,52 @@
+:root {
+  --distance: 100%;
+  --speed: calc();
+  --time: 4;
+}
+
+.progress-bar {
+  width:var(--distance);
+  height:8px;
+  background-color:green;
+  margin-bottom:20px;
+  transform: scaleX(0);
+  transform-origin: center left;
+  animation: progressAnimation 4s infinite;
+}
+
+.box {
+  height:200px;
+  width:200px;
+  background-color:red;
+  animation: boxAnimation infinite;
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+
+@keyframes progressAnimation {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+@keyframes boxAnimation {
+  from {
+    background-color: red;
+  }
+
+  10% {
+    background-color: yellow;
+  }
+
+  40% {
+    background-color: green;
+  }
+
+  to {
+    background-color: blue;
+  }
+}

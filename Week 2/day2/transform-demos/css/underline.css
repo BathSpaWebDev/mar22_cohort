@@ -1,0 +1,37 @@
+.flex-container {
+  display:flex;
+  width:100%;
+  gap:10px;
+  /* flex: flex-grow flex-shrink flex-basis; */
+}
+.flex-container .underline {
+  flex: 1 1 calc(100% / 3);
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:orange;
+}
+
+.flex-container .underline span {
+  color:#fff;
+  font-size:2rem;
+}
+
+.flex-container .underline span::after {
+  content:'';
+  display:block;
+  height:6px;
+  transform: scaleX(0);
+  background:#fff;
+  transition: 0.5s transform linear;
+  margin: 0 auto;
+}
+
+.flex-container .underline:hover  span::after {
+  transform: scaleX(1)
+}
+
+/* ::after {
+
+} */
