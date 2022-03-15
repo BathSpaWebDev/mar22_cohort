@@ -1,0 +1,50 @@
+:root {
+    --main-font-size: 10px;
+    --brand-col-1: #00ff00;
+    --brand-col-2: rgb(0, 0, 0);
+}
+
+div {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 40px;
+    background-color: var(--brand-col-2);
+}
+
+.example {
+    font-size: 10px;
+    /* width: calc(100vw / 5); */
+    background-color: pink;
+    font-size: var(--main-font-size);
+}
+
+p {
+    font-size: calc(2em - 4px);
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin-left: 200px;
+    overflow-x: hidden;
+    font-size: var(--main-font-size);
+}
+
+.box .box__inner {
+    /* width: calc(100% - 10px);
+    height: calc(100% - 10px); */
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    transform: translateX(-100%);
+    transition: 1s transform linear;
+    color: var(--brand-col-2);
+    padding: 10px;
+}
+
+.box:hover .box__inner {
+    transform: translateX(0);
+}
