@@ -44,9 +44,11 @@ They are:
 
 You can define media queries as min-width or max-width. The following says all css inside this media query will take effect when the viewport is **at least** (ie more than) 768px:
 
+```
 @media (min-width: 768px) {
     /* some styles*/
 }
+```
 
 The following means styles take effect when it viewport is **no more than** 768px: 
 ```
