@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content-container {}
+
+.content-container div {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.image-container img {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .image-container img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: green;
+    }
+}
