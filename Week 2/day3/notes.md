@@ -118,7 +118,7 @@ If you want to try though it is like this:
 />
 ```
 ### background images
-Finally, you can change the background image of a div in a media query, but first we need to cdo background-images, which we will cover tomorrow.
+Finally, you can change the background image of a div in a media query, but first we need to do background-images, which we will cover tomorrow.
 
 
 
@@ -126,14 +126,14 @@ Finally, you can change the background image of a div in a media query, but firs
 
 Create a coloured background hero banner which takes up the full width of the page, but only takes up a one third of the height of the viewport. 
 
-On  Mobile it should take up the full height of the mobile viewport. 
+On Mobile it should take up the full height of the mobile viewport. 
 
 Stretch task :
 
 Add some text in the center of the banner (you can do this with flex).
 
 
-## Tther challenge
+## Other challenge
 
 With the 3 column preview card we did for yesterday's homework. Make it so the cards stack on top  of each other on a mobile, but are side by side on desktop.
 
