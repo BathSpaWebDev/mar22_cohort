@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.hero-banner {
+    height: 400px;
+    background-color: red;
+    background-image: url("../images/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner__inner {
+    width: 80%;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+section.content-one {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% / 4);
+    height: 100vh;
+    background-image: url("../images/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
