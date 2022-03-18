@@ -1,40 +1,92 @@
+/* mobile first design */
+
 body {
     margin: 0;
 }
 
-.hero-banner {
-    height: 400px;
-    background-color: red;
-    background-image: url("../images/pic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin: 10px;
 }
 
-.hero-banner__inner {
-    width: 80%;
-    color: #fff;
-    font-size: 1.8rem;
+.flex-container div {
+    flex: 1;
+    /*makes all equal width*/
+    /*you can also set the width to a value like below - I would avoid vw for this*/
+    /* width: 200px;  */
 }
 
-section.content-one {
-    padding: 4rem 0;
-    display: flex;
-    justify-content: flex-end;
-    height: 400px;
+.flex-container .one {
+    background-color: rgb(33, 252, 179);
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: calc(100% / 4);
-    height: 100vh;
-    background-image: url("../images/pic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.flex-container .two {
+    background-color: rgb(124, 252, 212);
+}
+
+.flex-container .three {
+    background-color: rgb(185, 252, 231);
+}
+
+.flex-container .four {
+    background-color: rgb(176, 216, 249);
+}
+
+
+/* mobile first design we start with the smallest device resolution */
+
+@media screen and (min-width: 576px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    body {
+        background-color: yellow;
+    }
+    .flex-container .four {
+        display: none;
+    }
+    .flex-container .three {
+        display: none;
+    }
+    .flex-container .two {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex-container {}
+    body {
+        background-color: orange;
+    }
+    .flex-container .two {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-container {}
+    body {
+        background-color: red;
+    }
+    .flex-container .three {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flex-container {}
+    body {
+        background-color: green;
+    }
+    .flex-container .four {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-color: blue;
+    }
 }
