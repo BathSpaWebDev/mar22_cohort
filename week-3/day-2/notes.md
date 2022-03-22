@@ -20,7 +20,7 @@ nameOfFunction(value1, value2);
 
 We use functions to create reusable code. So we can call the same function multiple times, without writing all those lines of js again.
 
-We can slow pass in different values each time the function is called.
+We can pass in different values each time the function is called.
 
 ## Conditionals
 
@@ -33,7 +33,7 @@ The syntax for a consition is as follows:
 }
 ```
 
-## OPerators
+## Operators
 
 **Comparison operators** are symbols you use to compare values, and are mainly used inside a condition:
 
