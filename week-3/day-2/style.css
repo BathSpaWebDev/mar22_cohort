@@ -1,0 +1,7 @@
+#demo {
+    display: none;
+}
+
+#demo.visible {
+    display: block;
+}
