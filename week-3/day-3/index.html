@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="student">
+    </div>
+
+    <script>
+        const el = document.getElementById('student');
+        const student1 = {
+            age: 21,
+            subject: 'Maths',
+            modules: ['algebra', 'trigonometry', 'pythagoras']
+        }
+        const module = student1.modules[2];
+        console.log(module);
+
+        const p1 = document.createElement('p');
+        p1.innerHTML = 'Age: ' + student1.age
+
+        const p2 = document.createElement('p');
+        p2.innerHTML = 'Module: ' + student1.modules[0]
+
+        // let text = '';
+        // text += 'Age: ' + student1.age + '<br>';
+        // text += 'Module: ' + student1.modules[0] + '<br>';
+
+        // el.innerHTML = text;
+        el.appendChild(p1);
+        el.appendChild(p2);
+    </script>
+</body>
+
+</html>
