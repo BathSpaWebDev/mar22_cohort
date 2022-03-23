@@ -70,10 +70,10 @@ function printPersonDetails(person) {
     get hair colour and store in variable 
     */
 
-    //1. create a containing div that will wrap the person html - Use document.createElement('div')
-    //2. Create and store in a variable a paragraph that will contain the NAME information - Eg. let agePara = document.createElement('p');
-    //3. Create and store in a variablea paragraph that will contain the AGE information
-    //4. Create and store in a variable a paragraph that will contain the HAIR COLOUR information
+    // 1. create a containing div that will wrap the person html - Use document.createElement('div')
+    // 2. Create and store in a variable a paragraph that will contain the NAME information - Eg. let agePara = document.createElement('p');
+    // 3. Create and store in a variablea paragraph that will contain the AGE information
+    // 4. Create and store in a variable a paragraph that will contain the HAIR COLOUR information
     // 5. Add the age to the age paragraph using innerHTML e.g agePara.innerHTML = age;
     // 6. Add the name to the name paragraph 
     // 7. Add the hairColour to the hair colour paragraph 
