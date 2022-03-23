@@ -71,12 +71,18 @@ function printPersonDetails(person) {
     */
 
     //1. create a containing div that will wrap the person html - Use document.createElement('div')
-    //2. Create and store in a variable a paragraph that will contain the NAME information - Use document.createElement('p')
+    //2. Create and store in a variable a paragraph that will contain the NAME information - Eg. let agePara = document.createElement('p');
     //3. Create and store in a variablea paragraph that will contain the AGE information
     //4. Create and store in a variable a paragraph that will contain the HAIR COLOUR information
+    // 5. Add the age to the age paragraph using innerHTML e.g agePara.innerHTML = age;
+    // 6. Add the name to the name paragraph 
+    // 7. Add the hairColour to the hair colour paragraph 
 
-    // 5. Append the paragraphs to the containing div using appendChild()
-    // 6. Append the containing div to the html document
+
+    // 8. Append the paragraphs to the containing div using appendChild()
+    // 9. Append the containing div to the html document
+
+    // write your ACTUAL code here inside the function curly brackets
 }
 
 printPersonDetails(person1);
