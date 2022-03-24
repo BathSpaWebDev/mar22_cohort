@@ -45,7 +45,7 @@ function printPersonDetails(person) {
     get hair colour and store in variable 
     */
 
-    //1. create a containing div that will wrap the person html
+    //1. create a containing div that will wrap the person html - Use document.createElement('div')
     //2. Create and store in a variable a paragraph that will contain the NAME information - Use document.createElement('p')
     //3. Create and store in a variablea paragraph that will contain the AGE information
     //4. Create and store in a variable a paragraph that will contain the HAIR COLOUR information
