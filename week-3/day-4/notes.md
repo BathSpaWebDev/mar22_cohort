@@ -1,6 +1,6 @@
 # creating HTML in Javascripts
 
-Make sure you plan out the html that you are wabnting to create. Then write out the steps you need to do, eg _create paragraph element and store in variable_ 
+Make sure you plan out the html that you are wanting to create. Then write out the steps you need to do, eg _create paragraph element and store in variable_ 
 
 
 ```

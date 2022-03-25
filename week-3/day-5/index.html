@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>
+        There are 4 people in group A. To find out the names of the people, click the button below.
+    </p>
+    <button id="btn">
+        List names
+    </button>
+
+    <div id="list-container">
+    </div>
+
+
+    <form onsubmit="submitFn(event)">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name">
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+
+    <script>
+        const container = document.querySelector('#list-container');
+        const div = document.createElement('div');
+        const ul = document.createElement('ul');
+
+        const listArray = ['Bob', 'Jane', 'Tom'];
+
+        function listNames(event) {
+            const el = event.target;
+            if (el.classList.contains('active')) {
+                el.classList.remove('active');
+            } else {
+                el.classList.add('active');
+            }
+
+
+            for (let i = 0; i < listArray.length; i++) {
+                // do something
+                const li = document.createElement('li');
+                li.className = 'list-class';
+                li.innerHTML = listArray[i];
+                ul.appendChild(li);
+            }
+            console.log(ul);
+            container.innerHTML = ul;
+        }
+
+        // function submitFn(event) {
+        //     event.preventDefault();
+        //     console.log(event.target)
+        // }
+
+        document.getElementById('btn').addEventListener('click', listNames)
+    </script>
+</body>
+
+</html>
