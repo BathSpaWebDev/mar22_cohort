@@ -10,9 +10,18 @@
 </head>
 
 <body>
-    <p>
+
+    <p class="para">
         There are 4 people in group A. To find out the names of the people, click the button below.
     </p>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor tempore quas quod voluptates dolorum nobis dolore odio saepe minus voluptate sed, amet doloremque perspiciatis. Eaque quaerat doloribus facere assumenda dolorum?
+    </p>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor tempore quas quod voluptates dolorum nobis dolore odio saepe minus voluptate sed, amet doloremque perspiciatis. Eaque quaerat doloribus facere assumenda dolorum?
+    </p>
+
+
     <button id="btn">
         List names
     </button>
@@ -43,7 +52,6 @@
                 el.classList.add('active');
             }
 
-
             for (let i = 0; i < listArray.length; i++) {
                 // do something
                 const li = document.createElement('li');
@@ -53,14 +61,21 @@
             }
             console.log(ul);
             container.innerHTML = ul;
+
+            // const paragraphs = document.getElementsByClassName('para');
+            const paragraphs = document.querySelectorAll('.para');
+
+            const pArray = Array.from(paragraphs);
+            const lastParagraph = pArray.pop();
+            lastParagraph.classList.add('active');
+            console.log(paragraphs);
         }
 
         // function submitFn(event) {
         //     event.preventDefault();
         //     console.log(event.target)
         // }
-
-        document.getElementById('btn').addEventListener('click', listNames)
+        document.getElementById('btn').addEventListener('click', listNames);
     </script>
 </body>
 

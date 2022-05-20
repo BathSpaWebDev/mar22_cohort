@@ -30,17 +30,45 @@ const imageUrls = [
     'images/img-3.jpg'
 ]
 
+
+function clickHandler(event) {
+    const el = event.target;
+    console.log(el);
+    if (el.classList.contains('active')) {
+        event.target.classList.remove('active');
+    } else {
+        event.target.classList.add('active');
+    }
+}
+
+const thumbs = document.getElementsByClassName('thumbnail');
+console.log(thumbs);
+
+for (let i = 0; i < thumbs.length; i++) {
+    const thumbnail = thumbs[i];
+    thumbnail.addEventListener('click', clickHandler)
+}
+
+// .addEventListener('click')
+
+
 function doImage(url) {
     const div = document.getElementById('mydiv');
     const img = document.createElement('img');
     img.src = url;
-    img.className = "myImage";
+    img.className = "thumbnail";
     mydiv.appendChild(img);
 }
 
-for (let i = 0; i < imageUrls.length; i++) {
-    doImage(imageUrls[i]);
-}
+
+
+// function displayBigImage() {
+
+// }
+
+// for (let i = 0; i < imageUrls.length; i++) {
+//     doImage(imageUrls[i]);
+// }
 
 
 

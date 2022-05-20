@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <p class="task">Task one <button class="changeCol">Change me</button></p>
+        <p class="task">Task two <button class="changeCol">Change me</button></p>
+        <p class="task">Task three <button class="changeCol">Change me</button></p>
+    </div>
+
+
+
+    <script>
+        const text = 'Some text you store in a variable';
+        const container = document.getElementById('container');
+        const firstTask = document.querySelector('.task');
+
+        // const allTasks = document.querySelectorAll('.task');
+        const allTasks = document.getElementsByClassName('task');
+        const buttons = document.getElementsByClassName('changeCol');
+        console.log(buttons);
+        // firstTask.innerHTML = "<p>" + 'This was added with Javasccript' + '</p>';
+
+        function addHTML(event) {
+            event.target.parentElement.innerHTML = `
+            <div class="bla">
+                <p>${text}</p>
+            </div>
+            `;
+        }
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', addHTML);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -22,4 +22,21 @@ The second way is using an event listener in your script:
 document.getElementById('btn').addEventListener('click', myFunction)
 ```
 
+## DOM methods 
+
+```
+// DOM methods - ways of getting something from the document in oder to interact with it
+
+// Returns a HTML Collection  - this is live (works even if the the DOM has been changed)
+// Slightly quicker if you query several elements
+document.getElementByID('name-of-id'); //returns one
+document.getElementsByClassName('class-name') //returns multiple
+document.getElementsByTagName('tag-name')
+
+    // Returns a Nodelist  - this is not live (only returns if what present when the DOM was loaded)
+    // Slightly quicker if you query several elements
+document.querySelector('selector'); // returns only one
+document.querySelectorAll('selector'); // returns multiple
+```
+
 

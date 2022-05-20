@@ -1,0 +1,9 @@
+#mydiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#mydiv img {
+    width: 100px;
+}
