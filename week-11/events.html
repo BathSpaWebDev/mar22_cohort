@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo">
+
+        <p id="paraToClone">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sunt iste debitis iusto itaque excepturi commodi consequuntur, necessitatibus accusantium laudantium non ipsam natus repellendus, dolorem, vel facere totam illo molestiae.
+        </p>
+
+    </div>
+
+    <button>Click me</button>
+
+    <script>
+        const para = document.getElementById('paraToClone');
+        console.log(para);
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', function() {
+
+            const clone = para.cloneNode(true);
+
+            const string = clone.innerText;
+
+            const withCommas = string.replace(/\s/g, ',');
+            const newPara = document.createElement('p');
+            newPara.innerHTML = withCommas;
+            console.log(withCommas);
+            document.getElementById('demo').appendChild(newPara);
+        })
+    </script>
+
+</body>
+
+</html>

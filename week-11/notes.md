@@ -7,4 +7,17 @@ document.getElementById
 document.getElementsByClassName
 
 document.querySelector
-document.querSelectorAll
+document.querySelectorAll
+
+
+# returning functions
+```
+  // returning function
+        function doubleNumber(number) {
+            return number * 2;
+        }
+
+        const x = doubleNumber(2);
+
+        document.querySelector('.demo').innerHTML = x;
+        ```

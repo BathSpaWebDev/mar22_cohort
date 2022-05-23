@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo">Hello</div>
+
+    <form>
+        <label for="search"></label>
+        <input type="text" id="search" name="search">
+        <button id="search-button"></button>
+    </form>
+
+    <script>
+        const fruits = ['Apple', 'Orange', 'Banana'];
+        const regexp = /ran/g;
+
+        const found = fruits.filter((fruit, i) => {
+            return (
+                fruit.match(regexp)
+            )
+        });
+        console.log('MEH');
+
+        document.getElementById('demo').innerHTML = found;
+    </script>
+</body>
+
+</html>

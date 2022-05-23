@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            height: 40vh;
+            background: #444;
+            color: #fff;
+            display: fle;
+            justify-content: center;
+        }
+        
+        #timeline ul {
+            list-style: none;
+        }
+        
+        #timeline ul li {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+        }
+        
+        #timeline ul li div {
+            width: 400px;
+            height: 200px;
+            background: red;
+            padding: 2rem;
+            margin: 1rem;
+            transition: transform 2s, opacity 1s;
+            opacity: 0;
+        }
+        
+        #timeline ul li div.left {
+            transform: translateX(-100%);
+        }
+        
+        #timeline ul li div.right {
+            transform: translateX(100%);
+        }
+        
+        #timeline ul li div.in-view {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="banner">
+
+    </section>
+
+    <section id="timeline">
+        <ul>
+            <li>
+                <div class="left">
+                    <h3>Company founded</h3>
+                    <p>Such and such opended the company.</p>
+                </div>
+            </li>
+            <li>
+                <div class="right">
+                    <h3>Gained award</h3>
+                    <p>Won award for doing soomething</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <h3>Company reaches 500 clients</h3>
+                    <p>Lot of clients</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <script>
+        (function() {
+
+            const items = document.querySelectorAll('li div');
+
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+
+                // console.log(rect);
+                // console.log(window.innerHeight);
+
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+
+            function callbackFunc() {
+                for (var i = 0; i < items.length; i++) {
+                    if (isElementInViewport(items[i])) {
+                        items[i].classList.add("in-view");
+                    } else {
+                        items[i].classList.remove("in-view");
+                    }
+                }
+            }
+
+            window.addEventListener("load", callbackFunc);
+            window.addEventListener("resize", callbackFunc);
+            window.addEventListener("scroll", callbackFunc);
+
+        })();
+    </script>
+</body>
+
+</html>

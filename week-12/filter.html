@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="fruit-list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Pear</li>
+        <li>Banana</li>
+    </ul>
+
+    <div id="filtered-results">
+
+    </div>
+
+    <script>
+        const fruits = [];
+        const listItems = document.getElementById('fruit-list').children;
+
+        for (let i = 0; i < listItems.length; i++) {
+            fruits.push(listItems[i].innerText);
+        }
+
+        const pattern = /(e)$/g;
+
+        const filteredFruits = fruits.filter(function(f) {
+            return f.match(pattern)
+        });
+
+
+        const ul = document.createElement('ul');
+
+        for (let i = 0; i < filteredFruits.length; i++) {
+            const li = document.createElement('li');
+            li.innerHTML = filteredFruits[i];
+            ul.appendChild(li);
+        }
+
+        console.log(ul);
+
+        document.getElementById('filtered-results').appendChild(ul);
+
+
+        // console.log(fruits);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="intro">
+        That is a long string of numbers like 12, 50 and 999. It also has some sh1ecial characters like the dollar sign ($).
+    </h1>
+
+    <p id="result"></p>
+
+    <script>
+        const text = document.getElementById('intro').innerText;
+        console.log(typeof(text));
+
+        const pattern1 = /^(This|That)/g;
+        const pattern2 = /[1-9]/g;
+
+        const startsWithThisThat = text.match(pattern1);
+        const hasNumbers = text.match(pattern2);
+
+        console.log(result);
+
+        if (startsWithThisThat && !hasNumbers) {
+            // if the result is not null / ie there is a match the do something
+            document.getElementById('result').innerHTML = 'Starts with "This" or "That" AND HAS NO numbers';
+        } else {
+            document.getElementById('result').innerHTML = 'DOES NOT match"';
+        }
+    </script>
+</body>
+
+</html>
