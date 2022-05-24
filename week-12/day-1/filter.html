@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="fruit-list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Pear</li>
+        <li>Banana</li>
+    </ul>
+
+    <div id="search-bar">
+        <form>
+            <label for="searchQuery">Search fruits</label>
+            <input type="text" id="searchQuery" name="searchQuery">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <div id="filtered-results"></div>
+
+    <script>
+        const fruits = [{
+            name: 'Apple',
+            colour: 'green',
+            grownInUK: true
+        }, {
+            name: 'Banana',
+            colour: 'yellow',
+            grownInUK: false
+        }];
+
+        // const listItems = document.getElementById('fruit-list').children;
+
+        // for (let i = 0; i < listItems.length; i++) {
+        //     fruits.push(listItems[i].innerText);
+        // }
+
+
+        function searchFunction(event) {
+            event.preventDefault();
+
+            console.log('WORKED');
+            const inputValue = document.getElementById('searchQuery').value;
+            const pattern = new RegExp(inputValue, 'g');
+
+            // const pattern = /(e)$/g;
+
+            const filteredFruits = fruits.filter(function(f) {
+                return f.match(pattern)
+            });
+
+            const ul = document.createElement('ul');
+
+            for (let i = 0; i < filteredFruits.length; i++) {
+                const li = document.createElement('li');
+                li.innerHTML = filteredFruits[i];
+                ul.appendChild(li);
+            }
+
+            console.log(ul);
+
+            document.getElementById('filtered-results').appendChild(ul);
+
+        }
+
+        const btn = document.querySelector('#search-bar button');
+
+        btn.addEventListener('click', searchFunction);
+
+
+
+
+        // console.log(fruits);
+    </script>
+
+</body>
+
+</html>

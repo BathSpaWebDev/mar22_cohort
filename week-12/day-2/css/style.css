@@ -1,0 +1,21 @@
+#portfolio-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.portfolio-item {
+    background-color: aqua;
+    flex-basis: calc(100% / 3);
+}
+
+.portfolio-item .overlay {
+    background-color: rgb(149, 255, 0);
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
