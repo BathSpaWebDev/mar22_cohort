@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <script>
+        // function getName(firstname, surname) {
+        //     console.log(firstname + ' ' + surname);
+        //     return firstname + ' ' + surname;
+        // }
+
+        const getName = (firstname, surname) => {
+                console.log(firstname + ' ' + surname);
+                return firstname + ' ' + surname;
+            }
+            // const getName = (firstname, surname) => firstname + ' ' + surname;
+
+        document.getElementById('demo').innerHTML = getName('Marylin', 'Monroe')
+
+        const multiply = (x, y) => x * y
+
+        getName('Joe', 'Bloggs');
+
+        console.log(multiply(2, 4));
+    </script>
+</body>
+
+</html>

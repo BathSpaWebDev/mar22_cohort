@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <div id="bird"></div>
+
+    <script>
+        function Bird(scientificName, family, status, measurements) {
+            this.scientificName = scientificName;
+            this.family = family;
+            this.status = status;
+            this.measurements = measurements;
+        }
+        const bird1 = new Bird('Acrocephalus paludicola', 'Warblers', 'Not assessed', {
+            length: 13,
+            wingspan: 16.5
+        })
+        const bird2 = new Bird('Limosa lapponica', 'Sandpipers, snipes and phalaropes', 'Amber', {
+            length: 37,
+            wingspan: 14
+        })
+        const birds = [bird1, bird2];
+
+        birds.map((bird, index) => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <div class="bird">
+                    <h3>Scientific Name</h3>
+                    <p>${bird.scientificName}</p>
+                    <h3>Family</h3>
+                    <p>${bird.family}</p>
+                    <h3>Status</h3>
+                    <p>${bird.status}</p>
+                    <h3>Measurements</h3>
+                    <p>${bird.measurements.length}</p>
+                </div>
+            `;
+            document.getElementById('bird').appendChild(div);
+        })
+    </script>
+</body>
+
+</html>

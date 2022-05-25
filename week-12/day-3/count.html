@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo"></div>
+    <div id="message"></div>
+    <script>
+        function printMessage() {
+            document.getElementById('message').innerHTML = 'Finished';
+        }
+
+        async function countToTen(callback) {
+            let i = 0;
+            demo = document.getElementById("demo");
+            setInterval(function() {
+                    if (i == 10) clearInterval(interval);
+                    const li = document.createElement('li');
+                    li.innerHTML = i;
+                    demo.appendChild(li);
+                    i++;
+                },
+                1000);
+            callback();
+        }
+
+        countToTen(printMessage);
+    </script>
+</body>
+
+</html>

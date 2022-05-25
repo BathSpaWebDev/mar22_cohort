@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="success"></p>
+
+    <button id="btn" onclick="clickHandler()">click me</button>
+
+    <script>
+        // const person = {
+        //     firstname: 'Bob',
+        //     lastname: 'Smith',
+        //     email: 'bob@hotmail.com',
+        //     fullname: function() {
+        //         return this.firstname + ' ' + this.lastname
+        //     },
+        //     getScreenSize: () => this.screen.height
+        // }
+
+        // console.log(person.fullname());
+        // console.log(person.getScreenSize());
+
+        // function hello() {
+        //     document.getElementById("demo").innerHTML += this;
+        // }
+        // // const hello = () => {
+        // //     console.log(this);
+        // //     document.getElementById("demo").innerHTML += this;
+        // // }
+        // document.getElementById("btn").addEventListener("click", hello);
+
+
+        const button = document.getElementById('btn');
+
+        function doubleNumber(x, callback) {
+            const outputNumber = x * 2;
+            document.getElementById('demo').innerHTML = outputNumber;
+            setTimeout(callback, 3000);
+        }
+
+        function clickHandler() {
+            doubleNumber(12, function() {
+                document.getElementById('success').innerHTML = 'Number was doubled';
+            })
+        }
+
+
+        async function countToTen() {
+            for (let i = 0; i <= 10; i++) {
+                function addElement() {
+                    const li = document.createElement('li');
+                    li.innerHTML = i;
+                    document.getElementById('success').appendChild(li);
+                }
+                setTimeout(addElement, 1000);
+            }
+        }
+        countToTen();
+    </script>
+</body>
+
+</html>
