@@ -14,24 +14,38 @@
     <div id="message"></div>
     <script>
         function printMessage() {
-            document.getElementById('message').innerHTML = 'Finished';
+            setTimeout(function() {
+                document.getElementById('message').innerHTML = 'Finished';
+            }, 1000)
         }
 
-        async function countToTen(callback) {
+        async function countToTen() {
             let i = 0;
-            demo = document.getElementById("demo");
-            setInterval(function() {
-                    if (i == 10) clearInterval(interval);
-                    const li = document.createElement('li');
-                    li.innerHTML = i;
-                    demo.appendChild(li);
-                    i++;
-                },
-                1000);
-            callback();
+            const demo = document.getElementById("demo");
+
+            function addElement() {
+                return new Promise(resolve => {
+                    const interval = setInterval(() => {
+                        if (i == 3) {
+                            resolve('foo');
+                            clearInterval(interval);
+                        };
+                        const li = document.createElement('li');
+                        li.innerHTML = i;
+                        demo.appendChild(li);
+                        i++;
+                    }, 1000);
+                });
+            }
+
+            return addElement();
         }
 
-        countToTen(printMessage);
+        async function fire() {
+            await countToTen();
+            printMessage();
+        }
+        fire();
     </script>
 </body>
 
